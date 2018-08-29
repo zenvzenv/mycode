@@ -1,0 +1,11 @@
+package cn.zw.Service;
+
+import cn.zw.Dao.UserDao;
+/**
+ * ·þÎñ²ã£¬ÒÀÀµDao
+ * @author zhengwei
+ *
+ */
+public class UesrService {
+	private UserDao userDao=new UserDao();
+}
