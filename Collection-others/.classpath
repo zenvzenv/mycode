@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/zhengwei/Documents/guava-19.0.jar" sourcepath="C:/Users/zhengwei/Documents/guava-19.0 jar包/google-guava-jdk5-backport-branch-point-1049-g919ffc3/google-guava-919ffc3/guava/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

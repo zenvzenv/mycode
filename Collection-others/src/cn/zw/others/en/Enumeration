@@ -1,0 +1,9 @@
+Enumeration是比较古老的接口
+作用与Iterator相似，都是遍历输出数据
+方法有两个：
+hasMoreElement()与Iterator中的hasNext()相似
+nextElement()与Iterator中的next()相似
+
+应用
+Vector:elements()
+StringTolenizer字符串分割

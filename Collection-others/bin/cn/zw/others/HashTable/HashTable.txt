@@ -1,0 +1,31 @@
+一、HashTable与HashMap的区别
+1.主要：HashTable线程安全，同步，效率相对低下
+	  HashMap线程不安全，不同女干部，效率相对的较高
+2.父类不同：HashTable的父类是：Dictionary；MashMap的父类是AbstractMap
+3.null值：HashTable中，键值不能为null
+		HashMap中。键最多有一个为null，值可以有多个为null
+
+二、Properties
+1.作用：读写资源配置文件
+2.它要求键值只能为字符串
+3.方法：
+setProperty(String key,String value)
+getProperty(String key, String defaultValue) 
+getProperty(String key) 
+
+后缀：properties
+	store(OutputStream out, String comments) 
+	store(Writer writer, String comments) 
+	load(InputStream inStream) 
+	load(Reader reader) 
+.xml
+	storeToXML(OutputStream os, String comment) 
+	storeToXML(OutputStream os, String comment, String encoding) 
+	loadFromXML(InputStream in) 
+三、相对路径和绝对路径
+1.绝对路径：盘符:/
+2.相对路径:当前项目/工程
+四、类路径加载资源文件
+类所在的根路径
+1.类.class..getResourceAsStream("/"));
+2.Thread.currentThread().getContextClassLoader().getResourceAsStream("")

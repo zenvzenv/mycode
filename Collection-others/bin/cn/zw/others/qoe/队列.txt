@@ -1,0 +1,21 @@
+队列分单向队列和双向队列
+一、单向队列
+1.一般：先进先出
+2.优先队列和堆栈：先进后出
+		抛出异常		特殊值
+插入		add(e)		offer(e)
+移除		remove()	poll()
+获取		element()	peek()
+
+二、双向队列：两端操作，头或尾
+操作				第一个元素						最后一个元素
+		抛出异常			特殊值			抛出异常		特殊值
+插入		addFirst(e)		offerFirst(e)	addLast(e)	offerLast(e)
+		push(e)							add(e)		offer(e)
+
+移除		removeFirst()	pollFirst()		removeLast()	pollLast()
+		remove()/pop()	poll()		
+
+获取		getFirst()		peekFirst()		getLast()		peekLast()
+		element()		peek()
+常用子类ArrayDeque()来操作

@@ -1,0 +1,9 @@
+一、引用分类（面试）
+强引用：StrongReference引用指向对象，gc运行时不会被回收
+软引用：SoftReference，在gc运行时可能回收(JVM内存不足时回收)
+弱引用：WeakReference，gc运行时立即回收
+虚引用：PhantomReference，类似于无引用，主要跟踪对象被回收的状态，不能单独使用，必须与引用队列ReferenceQueue联合使用
+二、三个Map接口实现类
+1.WeakHashMap：键为若引用
+2.IndentityHashMap:键为比较地址去重，注意常量池的对象
+3.EnumMap:枚举Map，要求键为枚举值
