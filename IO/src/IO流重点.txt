@@ -1,0 +1,22 @@
+字节流:可以处理一切
+输入流:InputStream---->多态:FileInputStream
+输出流:OutputStream---->多态:FileOutputStream
+以上两者结合可以实现文件的复制
+
+
+字节流三者的包含关系
+new BufferedInputStream(new FileInputStream(new File对象))
+new BufferedOutputStream(new FileOutputStream(new File对象))
+					|
+					|
+					|
+					|
+					|
+				
+					|
+					|
+					|
+					|
+字符流三者包含关系
+new BufferedReader(new FileReader(new File))
+new BufferedWriter(new FileWriter(new File))

@@ -1,0 +1,14 @@
+一、读取文件
+1.建立连接，File对象，是读取文件的源头
+2.选择流，文件输入流  InputStream  FileInputStream
+3.操作：byte[] car=new byte[1024];+read+读取大小
+		输出
+4.释放资源
+二、写出文件
+1.建立文件，File对象，目的地
+2.选择流，文件输出流  OutputStream  FileOutputStream
+3.操作：write()+flush()
+4.释放资源
+三、文件拷贝 程序为桥梁
+1.建立联系	File对象	源头，目的地
+2.
