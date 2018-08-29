@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 表示是约束文件 -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/1" xmlns:tns="http://www.example.org/1" elementFormDefault="qualified">
+	<element name="person">
+		<complexType>
+		<!-- sequence代表元素要按照顺序存放
+			 all表示元素只能出现一次
+			 choice表示元素只能出现其中一个
+			 maxOccurs表示元素能出现的次数
+		 -->
+			<sequence>
+			<!-- <choice> -->
+			<!-- <all> -->
+				<element name="name" type="string"></element>
+				<element name="age" type="int"></element>
+			<!-- </all> -->
+			<!-- </choice> -->
+			</sequence>
+		</complexType>
+	</element>
+</schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/zhengwei/Documents/dom4j-1.6.1/dom4j-1.6.1.jar" sourcepath="C:/Users/zhengwei/Documents/dom4j-1.6.1/src"/>
+	<classpathentry kind="lib" path="C:/Users/zhengwei/Documents/dom4j-1.6.1/lib/jaxen-1.1-beta-6.jar" sourcepath="C:/Users/zhengwei/Documents/dom4j-1.6.1/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<person> 
+  <p1 id1="zw1"> 
+    <name>郑伟</name>  
+    <school>sqc</school>  
+    <age>25</age>  
+    <sex>男</sex> 
+  </p1>  
+  <p1> 
+    <name>zw</name>  
+    <age>23</age> 
+  </p1> 
+</person>

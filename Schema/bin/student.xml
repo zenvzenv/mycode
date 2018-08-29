@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<student> 
+  <stu> 
+    <id>101</id>  
+    <name>郑伟</name>  
+    <age>23</age> 
+  </stu>  
+  <stu> 
+    <id>102</id>  
+    <name>杨荣</name>  
+    <age>23</age> 
+  </stu>  
+  <stu>
+    <id>103</id>
+    <name>李思佳</name>
+    <age>23</age>
+  </stu>
+</student>
