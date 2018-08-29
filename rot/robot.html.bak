@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Java开发智能机器人</title>
+  <style type="text/css">
+	/*
+	<!--margin：外边距-->
+	<!--padding:内边距-->
+	<!--*通配符匹配所有-->
+	*/
+	*{margin:0;padding:0;}
+	body{background:url(img/bg.jpg)no-repeat;}
+	#head{width:100%;height:60px;background:rgba(0,0,0,0.5);text-align:center;line-height:60px;color:#fff;font-size:24px;}
+	#content{width:800px;height:600px;margin:100px auto 0;}
+	#content .c_head{width:100%;height:60px;}
+	#content .c_head img{margin:0 20px;float:left;}
+	#content .c_head span{line-height:60px;display:block;height:60px;float:left;color:#fff;font-size:18px;}
+	#content .c_center{width100%:;height:440px;background:rgba(255,255,255,0.5);overflow:auto;}
+	#content .c_center .rWord{width:100%;background:red;margin-top:20px;overflow:hidden:}
+	#content .c_head .rWord span{display:block;widthj:40px;height:50px;background:url(img/rot.png);margin:0 20px;float:left;}
+	#content .c_head .rWord p{float:left;padding:10px;background:rgba(0,0,255,.5);color:#fff;border-radius:10px;max-width:220px;}
+
+	#content .c_head .mWord{widrh:100%;overflow:hidden;margin-top:20px;background:blue:}
+	#content .c_head .mWord span{display:block;width:40px;height:40px;background:url(img/my.png);float:right;margin:0 20px;}
+	#content .c_head .rWord p{float:right;background:#19b955;padding:10px;color:#333;border-radius:10px;max-width:220px;}
+
+	#content .c_foothead{width:100%;height:60px;}
+	#input{width:620px;height:60px;background:rgba(0,0,0,.1);outline:no;border:none;margin:20px;border-radius:10px;text-indent:20px;font-size:15px;float:left;}
+
+	#btn{width:100px;height:60px;background:rgba(0,0,0,.5);float:left;text-align:center;line-height:60px;margin-top:20px;border-radius:10px;color:#fff;}
+  </style>
+ </head>
+ <body>
+	<!--不能以数字符号开头以及特殊符号开头，要-->
+	<div id="head">
+		Java开发人工智能机器人
+	</div>
+	<div id="content">
+		<div class="c_head">
+			<img src="img/logo.png";alt="logo";width="80";height="60"/>
+			<span>人工只能</span>
+		</div> 
+		<div class="c_center">
+			<div class="rWord">
+				<span></span>
+				<p>好久不见！</p>
+			</div>
+			<div class="mWord">
+				<span></span>
+				<p>好久不见！</p>
+			</div>
+		</div>
+		<div class="c_foothead">
+			<input id="input" type="text"/>
+			<div id="btn">发送</div>
+		</div>
+	</div>
+ </body>
+</html>
