@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <!-- 第一种在property中声明value属性值 -->
+    <!-- <bean id="FileNameGenerator" class="cn.zw.spring.bean.FileNameGenerator">
+    	<property name="name">
+    		<value>shiyanlou</value>
+    	</property>
+    	<property name="type">
+    		<value>text</value>
+    	</property>
+    </bean> -->
+    
+    <!-- 第二种方法 -->
+   <!--  <bean id="FileNameGenerator" class="cn.zw.spring.bean.FileNameGenerator">
+    	<property name="name" value="zw"></property>
+    	<property name="type" value="txt"></property>
+    </bean> -->
+    
+    <!-- 第三种方法 -->
+    <bean id="FileNameGenerator" class="cn.zw.spring.bean.FileNameGenerator" p:name="zw" p:type="txt"/>
+    
+    
+    <!-- 第一种在Customer中引用Person -->
+    <!-- <bean id="CustomerBean" class="cn.zw.spring.innerBean.Customer">
+    	<property name="person" ref="PersonBean"></property>
+    </bean>
+    
+    <bean id="PersonBean" class="cn.zw.spring.innerBean.Person">
+    	<property name="name" value="zw"></property>
+    	<property name="address" value="nj"></property>
+    	<property name="age" value="23"></property>
+    </bean> -->
+    
+    <!-- 第二种在Customer的Bean的内部声明一个内部Bean -->
+    <bean id="CustomerBean" class="cn.zw.spring.innerBean.Customer">
+    	<property name="person">
+    		<bean class="cn.zw.spring.innerBean.Person">
+    			<property name="name" value="zw"></property>
+    			<property name="address" value="nj"></property>
+    			<property name="age" value="23"></property>
+    		</bean>
+    	</property>
+    </bean>
+    
+    <!-- 第三种内部Bean通过构造函数注入 -->
+    <!-- <bean id="CustomerBean" class="cn.zw.spring.innerBean.Customer">
+    	<constructor-arg>
+    		<bean class="cn.zw.spring.innerBean.Person">
+    			<property name="name" value="zw"></property>
+    			<property name="address" value="nj"></property>
+    			<property name="age" value="23"></property>
+    		</bean>
+    	</constructor-arg>
+    </bean> -->
+    
+    <!-- 若不配置scope的话，默认是单例模式 -->
+    <!-- <bean id="CustomerService" class="cn.zw.spring.services.CustomerService"></bean> -->
+    
+    <!-- 原型模式 -->
+    <bean id="CustomerService" class="cn.zw.spring.services.CustomerService" scope="prototype"></bean>
+    
+    
+</beans>
